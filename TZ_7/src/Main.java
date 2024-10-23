@@ -56,5 +56,10 @@ public class Main {
         taskManager.deleteTask(task1Id);
         taskManager.deleteEpic(epic1Id);
         taskManager.deleteSubtask(subtask1Id);
+        if (tempFile.delete()) {
+            System.out.println("Файл удалён");
+        } else {
+            System.out.println("Файл не удален");
+        }
     }
 }
